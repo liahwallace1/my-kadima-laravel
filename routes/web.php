@@ -17,15 +17,15 @@ Route::get('/', function () {
 
 // root 'static#home'
 
-Route::get('/login', `SessionsController@new`)
-Route::post('/login', `SessionsController@create`)
-Route::get('/logout', `SessionsController@destroy`)
-
-  #omniauth
-  Route::get('/auth/facebook/callback', `SessionsController@create`)
-  Route::get('/auth/failure', function () {
-    return redirect()->route('/')
-  })
+// Route::get('/login', `SessionsController@new`)
+// Route::post('/login', `SessionsController@create`)
+// Route::get('/logout', `SessionsController@destroy`)
+//
+//   #omniauth
+//   Route::get('/auth/facebook/callback', `SessionsController@create`)
+//   Route::get('/auth/failure', function () {
+//     return redirect()->route('/')
+//   })
 
   // Other Rails routes
   // resources :users do
