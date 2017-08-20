@@ -18,7 +18,7 @@ class Game extends Model
 
   public function users()
   {
-    return $this->hasMany('App\User');
+    return $this->hasManyThrough('App\User', 'App\GameUser');
   }
 
   public function location()
