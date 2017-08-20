@@ -36,5 +36,7 @@ Route::get('/', function () {
   // resources :locations
 
 Auth::routes();
+// localhost:8000/games
+Route::resource('games', 'GameController');
 
 Route::get('/home', 'HomeController@index')->name('home');
