@@ -34,3 +34,7 @@ Route::get('/', function () {
   //
   // resources :games
   // resources :locations
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
