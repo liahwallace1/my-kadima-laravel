@@ -19,6 +19,7 @@ class CreateGamesTable extends Migration
             $table->string('distance');
             $table->string('game_type');
             $table->integer('volley_total');
+            $table->integer('location_id')->unsigned();
             $table->foreign('location_id')->references('id')->on('locations');
             $table->timestamps();
         });
