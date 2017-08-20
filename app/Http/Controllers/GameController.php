@@ -25,7 +25,7 @@ class GameController extends Controller
      */
     public function index()
     {
-        $games = App\Game::all();
+        $games = Game::all();
         if (!$games->isEmpty()) {
           return view('game.index', ['games' => $games]);
         } else {
