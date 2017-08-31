@@ -12,7 +12,7 @@
           <li class="list-group-item">
             <strong><a href="{{ url('/locations/'.$location->id) }}">{{ $location->name }}</a></strong><br />
             {{ $location->city }}, {{ $location->state }}<br />
-            <a class="btn btn-default btn-group-xs" href="{{ url('/locations/'.$location->id.'/edit') }}">Edit</a>
+            <a class="btn btn-default btn-xs" href="{{ url('/locations/'.$location->id.'/edit') }}">Edit</a>
             @if(!isset($location->city) || !isset($location->state) || !isset($location->turf))
               <p><em>This location needs to be updated.</em></p>
             @endif
